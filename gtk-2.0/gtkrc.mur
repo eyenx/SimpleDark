@@ -1,0 +1,159 @@
+## GTK Theme OrangeRemix for OpenBox.
+## by gnomeye
+## License: GPL
+
+gtk-color-scheme = "base_color:#28292b\nfg_color:#b0b0b0\nbg_color:#1c1d1f\ntooltip_fg_color:#000000\ntooltip_bg_color:#999999\nselected_bg_color:#141414\nselected_fg_color:#b0b0b0\ntext_color:#b0b0b0\npanel_color:#1c1d1f\nhuman_color:#303030"
+
+
+style "murrine-default"
+{
+  GtkButton::default_border = { 0, 0, 0, 0 }
+  GtkButton::default_outside_border = { 0, 0, 0, 0 }
+  GtkRange::trough_border = 0
+
+  GtkWidget::focus_padding = 1
+## HTML Colors
+  GtkWidget::link-color="#085dad"
+  GtkWidget::visited-link-color="#aa00aa"
+  GtkHTML::alink_color="#085dad"
+  GtkHTML::link_color="#085dad"
+  GtkHTML::vlink_color="#aa00aa"
+  GnomeHref::link_color="085dad"
+  GtkIMHtml::hyperlink-color = "#085dad"
+  GtkIMHtml::hyperlink-prelight-color="#6599ff" 
+
+  GtkPaned::handle_size = 6
+
+  GtkRange::slider_width = 12
+  GtkRange::stepper_size = 15 # toolbar arrows
+  GtkScrollbar::min_slider_length = 30
+  GtkCheckButton::indicator_size = 12
+  GtkMenuBar::internal-padding = 0
+
+  GtkTreeView::expander_size = 14
+  GtkExpander::expander_size = 16
+
+  xthickness = 0
+  ythickness = 0
+
+  fg[NORMAL]        = @selected_fg_color
+  fg[PRELIGHT]      = @text_color
+  fg[ACTIVE]        = shade (0.86, @fg_color)
+  fg[SELECTED]      = shade (0.86, @fg_color)
+  fg[INSENSITIVE]   = shade (0.60, @fg_color)
+
+  bg[NORMAL]		= @bg_color
+  bg[PRELIGHT]		= shade (0.90, @human_color)
+  bg[ACTIVE]		= shade (1.08, @bg_color)
+  bg[SELECTED]		= @selected_bg_color
+  bg[INSENSITIVE]	= shade (0.90, @bg_color)
+
+  base[NORMAL]		= @base_color
+  base[PRELIGHT]	= shade (1.08, @base_color)
+  base[ACTIVE]		= shade (0.80, @base_color)
+  base[SELECTED]	= shade (0.60, @base_color)
+  base[INSENSITIVE]     = darker (@base_color)
+
+  text[NORMAL]		= @text_color
+  text[PRELIGHT]	= @text_color
+  text[ACTIVE]		= @text_color
+  text[SELECTED]	= @text_color
+  text[INSENSITIVE]	= shade (0.60, @fg_color)
+
+  engine "murrine" 
+  {
+	animation = TRUE
+	contrast = 1.10
+	glazestyle = 0
+	gradient_shades = {1.15,1.05,1.04,0.9}
+	glowstyle = 4
+	highlight_shade = 1.0
+	lightborder_shade = 1.0
+	lightborderstyle = 0
+	listviewheaderstyle = 0
+	listviewstyle = 0
+	menubaritemstyle = 0
+	menubarstyle = 0
+	menuitemstyle = 0
+	menustyle = 0
+	reliefstyle = 0
+	rgba = TRUE
+	roundness = 0
+	scrollbarstyle = 0
+	sliderstyle = 0
+	stepperstyle = 0
+	toolbarstyle = 0
+}
+}
+
+
+style "murrine-tooltips" = "murrine-default"
+{
+  xthickness = 0
+  ythickness = 0
+  bg[NORMAL] = @tooltip_bg_color
+  fg[NORMAL] = @tooltip_fg_color
+}
+
+
+style "metacity-frame"
+{
+  # Normal base color
+  #bg[NORMAL]  = "#bbbbbb"
+
+  # Unfocused title background color
+  #bg[INSENSITIVE]  = { 0.8, 0.8, 0.8 }
+
+  # Unfocused title text color
+  #fg[INSENSITIVE]  = { 1.55, 1.55, 1.55 }
+
+  # Focused icon color
+  #fg[NORMAL]  = { 0.2, 0.2, 0.2 }
+
+  # Focused title background color
+  bg[SELECTED]  = @bg_color
+
+  # Focused title text color
+  fg[SELECTED]  = @fg_color
+}
+
+# widget styles
+class "GtkWidget" style "murrine-default"
+class "GtkButton" style "murrine-default"
+class "GtkCombo"  style "murrine-default"
+class "GtkRange"  style "murrine-default"
+class "GtkFrame"  style "murrine-default"
+class "GtkMenu"   style "murrine-default"
+class "GtkEntry"  style "murrine-default"
+class "GtkMenuItem"    style "murrine-default"
+class "GtkStatusbar"   style "murrine-default"
+class "GtkNotebook"    style "murrine-default"
+class "GtkProgressBar" style "murrine-default"
+
+class "MetaFrames" style "metacity-frame"
+widget_class "*MenuItem.*" style "murrine-default"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "murrine-default"
+widget_class "*.GtkCombo.GtkButton"    style "murrine-default"
+
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "murrine-default"
+widget "gtk-tooltips" style "murrine-default"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "murrine-default"
+widget_class "*.GtkCTree.GtkButton" style "murrine-default"
+widget_class "*.GtkList.GtkButton" style "murrine-default"
+widget_class "*.GtkCList.GtkButton" style "murrine-default"
+widget_class "*.GtkFrame.GtkLabel" style "murrine-default"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "murrine-default"
+widget_class "*.GtkNotebook.*.GtkViewport" style "murrine-default"
+
+# evolution
+widget_class "*GtkCTree*" style "murrine-default"
+widget_class "*GtkList*" style "murrine-default"
+widget_class "*GtkCList*" style "murrine-default"
+widget_class "*.ETree.*" style "murrine-default"

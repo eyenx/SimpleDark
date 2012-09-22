@@ -1,0 +1,334 @@
+/*************************
+ * Check and Radio items *
+ *************************/
+
+.menuitem.radio:active {
+	background-image: url("assets/radio-menuitem-checked.svg");
+}
+
+.menuitem.radio:active:prelight {
+	background-image: url("assets/radio-menuitem-checked-prelight.svg");
+}
+
+.menuitem.radio:active:insensitive {
+	background-image: url("assets/radio-menuitem-checked-insensitive.svg");
+}
+
+.menuitem.radio:inconsistent {
+	background-image: url("assets/radio-menuitem-mixed.svg");
+}
+
+.menuitem.radio:inconsistent:insensitive {
+	background-image: url("assets/radio-menuitem-mixed-insensitive.svg");
+}
+
+.menuitem.check:active {
+	background-image: url("assets/checkbox-menuitem-checked.svg");
+}
+
+.menuitem.check:active:prelight {
+	background-image: url("assets/checkbox-menuitem-checked-prelight.svg");
+}
+
+.menuitem.check:active:insensitive {
+	background-image: url("assets/checkbox-menuitem-checked-insensitive.svg");
+}
+
+.menuitem.check:inconsistent {
+	background-image: url("assets/checkbox-menuitem-mixed.svg");
+}
+
+.menuitem.check:inconsistent:insensitive {
+	background-image: url("assets/checkbox-menuitem-mixed-insensitive.svg");
+}
+
+/* draw regular check and radio items using our SVG assets */
+.check,
+.check row:selected,
+.check row:selected:focused {
+    background-image: url("assets/checkbox-unchecked-dark.svg");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focused:insensitive {
+    background-image: url("assets/checkbox-unchecked-insensitive-dark.svg");
+}
+
+.check:active,
+.check row:selected:active,
+.check row:selected:focused:active {
+    background-image: url("assets/checkbox-checked-dark.svg");
+}
+
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focused:active:insensitive
+{
+    background-image: url("assets/checkbox-checked-insensitive-dark.svg");
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focused:inconsistent {
+    background-image: url("assets/checkbox-mixed-dark.svg");
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focused:inconsistent:insensitive {
+    background-image: url("assets/checkbox-mixed-insensitive-dark.svg");
+}
+
+.radio,
+.radio row:selected,
+.radio row:selected:focused {
+    background-image: url("assets/radio-unselected-dark.svg");
+}
+
+.radio:insensitive,
+.radio row:selected:insensitive,
+.radio row:selected:focused:insensitive {
+    background-image: url("assets/radio-unselected-insensitive-dark.svg");
+}
+
+.radio:active,
+.radio row:selected:active,
+.radio row:selected:focused:active {
+    background-image: url("assets/radio-selected-dark.svg");
+}
+
+.radio:active:insensitive,
+.radio row:selected:active:insensitive,
+.radio row:selected:focused:active:insensitive {
+    background-image: url("assets/radio-selected-insensitive-dark.svg");
+}
+
+.radio:inconsistent,
+.radio row:selected:inconsistent,
+.radio row:selected:focused:inconsistent {
+    background-image: url("assets/radio-mixed-dark.svg");
+}
+
+.radio:inconsistent:insensitive,
+.radio row:selected:inconsistent:insensitive,
+.radio row:selected:focused:inconsistent:insensitive {
+    background-image: url("assets/radio-mixed-insensitive-dark.svg");
+}
+
+.sidebar .radio:active,
+.sidebar .radio:active:focused,
+.sidebar .radio:active:prelight {
+    background-image: url("assets/sidebar-radio-checked-dark.svg");
+}
+
+.sidebar .radio:prelight {
+    background-image: url("assets/sidebar-radio-prelight.svg");
+}
+
+.sidebar .radio:active:selected,
+.sidebar .radio:active:selected:focused {
+    background-image: url("assets/sidebar-radio-selected-dark.svg");
+}
+
+.sidebar .radio:selected:prelight,
+.sidebar .radio:selected:focused {
+    background-image: url("assets/sidebar-radio-selected-prelight.svg");    
+}
+
+.entry {
+    border-image: url("assets/entry-border-normal-dark.svg") 2 / 2 stretch;
+}
+
+.notebook .entry {
+    border-image: url("assets/entry-border-normal-dark1.svg") 2 / 2 stretch;
+}
+
+/*.entry:focused {
+    border-image: url("assets/entry-border-focused-dark.svg") 2 / 2 stretch;
+}*/
+
+.primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
+.primary-toolbar GtkComboBox.combobox-entry .button,
+GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:hover:active,
+GtkComboBox.combobox-entry .button {
+    border-image: url("assets/entry-border-normal-dark.svg") 2 / 2 2 2 0 stretch;
+}
+
+GtkScale.trough,
+GtkScale.trough.horizontal {
+    border-image: url("assets/trough-border-horizontal-dark.svg") 2 / 2 stretch;
+}
+
+.notebook GtkScale.trough,
+.notebook GtkScale.trough.horizontal {
+    border-image: url("assets/trough-border-horizontal-dark1.svg") 2 / 2 stretch;
+}
+
+GtkSwitch.trough:active {
+    border-image: url("assets/trough-border-switch-dark.svg") 2 / 2 stretch;
+}
+
+GtkScale.trough.vertical {
+    border-image: url("assets/trough-border-vertical-dark.svg") 2 / 2 stretch;
+}
+
+.notebook GtkScale.trough.vertical {
+    border-image: url("assets/trough-border-vertical-dark1.svg") 2 / 2 stretch;
+}
+
+GtkScale.slider,
+GtkScale.slider.horizontal {
+    background-image: url("assets/scale-slider-horizontal-dark.svg");
+}
+
+GtkScale.slider:insensitive,
+GtkScale.slider.horizontal:insensitive {
+    background-image: url("assets/scale-slider-horizontal-insensitive-dark.svg");
+}
+
+GtkScale.slider.vertical {
+    background-image: url("assets/scale-slider-vertical-dark.svg");
+}
+
+GtkScale.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-vertical-insensitive-dark.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal {
+    background-image: url("assets/scale-slider-marks-above-horizontal-dark.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
+    background-image: url("assets/scale-slider-marks-above-horizontal-insensitive-dark.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical {
+    background-image: url("assets/scale-slider-marks-above-vertical-dark.svg");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-marks-above-vertical-insensitive-dark.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal {
+    background-image: url("assets/scale-slider-marks-below-horizontal-dark.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
+    background-image: url("assets/scale-slider-marks-below-horizontal-insensitive-dark.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical {
+    background-image: url("assets/scale-slider-marks-below-vertical-dark.svg");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:insensitive {
+    background-image: url("assets/scale-slider-marks-below-vertical-insensitive-dark.svg");
+}
+
+.button {
+    border-image: url("assets/button-border-dark.svg") 2 / 2 stretch;
+}
+
+.notebook .button {
+    border-image: url("assets/button-border-dark1.svg") 2 / 2 stretch;
+}
+
+.button:active,
+.toolbar .button:active,
+.toolbar GtkComboBox .button
+.button:hover:active,
+.toolbar .button:hover:active {
+    border-image: url("assets/button-active-border-dark.svg") 2 / 2 stretch;
+}
+
+.notebook .button:active,
+.notebook .button:hover:active {
+    border-image: url("assets/button-active-border-dark1.svg") 2 / 2 stretch;
+}
+
+.button.default {
+    border-image: url("assets/button-default-border-dark.svg") 3 / 3 stretch;
+}
+
+.primary-toolbar .toolbar .button:active,
+.primary-toolbar.toolbar .button:active,
+.primary-toolbar .toolbar .button:active:hover,
+.primary-toolbar.toolbar .button:active:hover,
+.primary-toolbar .toolbar GtkComboBox .button:hover,
+.primary-toolbar.toolbar GtkComboBox .button:hover {
+    border-image: url("assets/primary-toolbar-button-active-border-dark.svg") 4 / 4 stretch;
+}
+
+.toolbar .raised .button,
+.toolbar .raised.button {
+    border-image: url("assets/primary-toolbar-raised-button-border-dark.svg") 4 / 4 stretch;
+}
+
+
+/* nth-child for linked areas */
+.toolbar .raised.linked.button,
+.toolbar .raised.linked.button:active,
+.toolbar .raised.linked.button:active:hover,
+.toolbar .raised.linked .button,
+.toolbar .raised.linked .button:active,
+.toolbar .raised.linked .button:active:hover {
+    border-image: url("assets/primary-toolbar-raised-button-border-dark.svg") 4 / 4 0 stretch;
+}
+
+.toolbar .raised.linked.button:nth-child(first) ,
+.toolbar .raised.linked.button:active:nth-child(first),
+.toolbar .raised.linked.button:active:hover:nth-child(first),
+.toolbar .raised.linked:nth-child(first) .button,
+.toolbar .raised.linked:nth-child(first) .button:active,
+.toolbar .raised.linked:nth-child(first) .button:active:hover {
+    border-image: url("assets/primary-toolbar-raised-button-border-dark.svg") 4 / 4 0 4 4 stretch;
+}
+
+.toolbar .raised.linked.button:nth-child(last),
+.toolbar .raised.linked.button:active:nth-child(last),
+.toolbar .raised.linked.button:active:hover:nth-child(last),
+.toolbar .raised.linked:nth-child(last) .button,
+.toolbar .raised.linked:nth-child(last) .button:active,
+.toolbar .raised.linked:nth-child(last) .button:active:hover {
+    border-image: url("assets/primary-toolbar-raised-button-border-dark.svg") 4 / 4 4 4 0 stretch;
+}
+
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+	background-image: url("assets/prgrss.svg");
+}
+
+/*.progressbar,
+.entry.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focused {
+    border-image: url("assets/progressbar-border-dark.svg") 3 / 3 stretch;
+}
+
+.progressbar.vertical {
+    border-image: url("assets/progressbar-border-vertical-dark.svg") 3 / 3 stretch;
+}*/
+
+GtkProgressBar.progressbar {
+	background-image: url("assets/prgrss.svg");
+}
+
+GtkProgressBar.progressbar.vertical {
+	background-image: url("assets/prgrssv.svg");
+}
+
+GtkTreeView row:selected {
+	border-image: url("assets/treeview-border-dark.svg") 2 / 2 stretch;
+}
+
+GtkTreeView row:selected:focused {
+	border-image: url("assets/treeview-focus-border-dark.svg") 2 / 2 stretch;
+}
